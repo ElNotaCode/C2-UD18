@@ -121,11 +121,11 @@ public class ConnectionDB {
 		try {
 			Statement statement = conexion.createStatement();
 			statement.execute(query);
-			System.out.println("Tabla fabricantes creada.");
+			System.out.println("query ejecutada con exito: \n" + query);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			System.out.println(e);
-			System.out.println("Error creando la tabla.");
+			System.out.println("Error ejecutando query: \n" + query);
 		}
 		
 		
